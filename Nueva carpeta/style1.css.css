@@ -1,0 +1,168 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+    background-size: 100%;
+
+}
+
+
+.sun{
+    height: 115px;
+    width: 115px;
+    background-image: url(https://seeklogo.com/images/S/sol-logo-D6E753840B-seeklogo.com.png);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -4px 2px 56px #f9c05f;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.mercurio{
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #935f2a 60% #54370c 75%);
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #f9c05f;
+    left: 47%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    animation: orbit2 3s linear infinite;
+    background-image: url(https://i.pinimg.com/474x/fc/6f/31/fc6f3148b0afc6794b4370a659dc83e7.jpg) ;
+  
+}
+@keyframes orbit2{
+    from{
+        transform: rotate(0deg) translate(70px) rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg) translate(70px) rotate(-360deg);
+    }
+    
+ }
+
+p{
+    color: white;
+    font-family: system-ui;
+    position: absolute;
+    left: -45px;
+    top: -9px;
+}
+
+.mercurio-outline, .venus-outline-1, .tierra-outline-1, .marte-outline-1{
+    border-radius: 50%;
+    border: 3px dotted #ddd9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mercurio-outline{
+    height: 140px;
+    width: 140px;
+}
+.venus{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #c1aa81;
+    left: 40%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    animation: orbit3 10s linear infinite;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi5OvFMF86HBhE7fL64Yxe0Z4wzuQMhESJPy1lz5lU2kgs5H8U2q63V7We5ihM-DYf2lY&usqp=CAU) ;
+    background-size: 100%;
+}
+@keyframes orbit3{
+    from{transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to{transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+    
+ }
+ .venus-outline-1{
+    height: 220px;
+    width: 220px;
+}
+
+
+.tierra{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #2855d6;
+    left: 44%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+    animation: orbit4 20s linear infinite;
+    background-image: url(https://e7.pngegg.com/pngimages/84/240/png-clipart-earth-earth-planet.png) ;
+    background-size: 100%;
+  
+}
+
+@keyframes orbit4{
+    from{transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to{transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    
+ }
+
+ .tierra-outline-1{
+    height: 300px;
+    width: 300px;
+}
+
+.tierra-circle{
+    height: 65px;
+    width: 65px;
+    border: 2px dotted #fff;
+    position: relative;
+    left: -8px;
+    top: -8px;
+    border-radius: 40px;
+}
+
+.tierra-inner{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 45%;
+    top: 45%;
+    animation: orbit5 3s linear infinite; 
+}
+
+@keyframes orbit5{
+    from{transform: rotate(0deg) translate(33px) rotate(0deg); }
+    to{transform: rotate(360deg) translate(33px) rotate(-360deg); }
+    
+ }
+
+ .marte{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #fea535;
+    left: 46.5%;
+    top: 46.5%;
+    transform: translate(-50%, -50%);
+    animation: orbit6 30s linear infinite;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2JZmirphnOmPIhRmuNXIgQxYah07R3nfhYw&usqp=CAU) ;
+    background-size: 100%;
+}
+@keyframes orbit6{
+    from{transform: rotate(0deg) translateX(185px) rotate(0deg); }
+    to{transform: rotate(360deg) translateX(185px) rotate(-360deg); }
+    
+ }
+ .marte-outline-1{
+    height: 370px;
+    width: 370px;
+}
